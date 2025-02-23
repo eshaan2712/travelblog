@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Destinations - Travel Blog</title>
+    <title>Contact Us - Travel Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
@@ -35,46 +35,36 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Destinations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./destination.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     
     <header class="custom-header">
-        <h1>Top Destinations</h1>
-        <p>Explore some of the most amazing places around the world!</p>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
     </header>
 
     <div class="container my-4">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="mountain.jpg" class="card-img-top" alt="Mountain">
-                    <div class="card-body">
-                        <h5 class="card-title">Majestic Mountains</h5>
-                        <p class="card-text">Experience breathtaking views and thrilling hikes.</p>
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" required>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="beach.jpg" class="card-img-top" alt="Beach">
-                    <div class="card-body">
-                        <h5 class="card-title">Sunny Beaches</h5>
-                        <p class="card-text">Relax on golden sands and enjoy the ocean breeze.</p>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" required>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="city.jpg" class="card-img-top" alt="City">
-                    <div class="card-body">
-                        <h5 class="card-title">Vibrant Cities</h5>
-                        <p class="card-text">Discover the charm and excitement of bustling cities.</p>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </div>
@@ -92,4 +82,3 @@
 </body>
 
 </html>
-
